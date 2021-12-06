@@ -1,8 +1,8 @@
 # Studio-Analyzer-Sample
 
-[IRIS Analyzer 디자인](https://www.figma.com/file/xYz1md6F2v7hKmn2J11Od0/assignment?node-id=2%3A10) 퍼블리싱 작업 진행
-
 ## 내용
+
+[IRIS Analyzer 디자인](https://www.figma.com/file/xYz1md6F2v7hKmn2J11Od0/assignment?node-id=2%3A10) 퍼블리싱
 
 Style-Core의 컴포넌트를 사용해서 페이지를 구성한다.
 
