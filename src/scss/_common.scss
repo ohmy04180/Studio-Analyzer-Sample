@@ -1,0 +1,54 @@
+html,
+body,
+.layout-root,
+.container,
+.body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+
+//  panel 공통
+.panel-wrap {
+  width: 283px;
+  height: 100%;
+  background-color: $ui-01;
+  position: relative;
+}
+.panel {
+  width: 100%;
+  height: 100%;
+}
+.panel-head {
+  background-color: $ui-04;
+  .tab__bar {
+    width: 100%;
+  }
+  .tab__item {
+    border-left: 1px solid $ui-04;
+  }
+}
+
+.panel-remove {
+  position: absolute;
+  top: 60px;
+  width: 20px;
+  height: 52px;
+}
+.panel-remove--right {
+  right: -19px;
+}
+.panel-remove__button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $ui-04;
+  background-color: $ui-02;
+  border-radius: 0 2px 2px 0;
+}

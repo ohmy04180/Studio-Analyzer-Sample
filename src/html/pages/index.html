@@ -10,9 +10,14 @@
 
 <body>
   <div class="layout-root">
+    <div class="modal modal--2xl" style="position: fixed;">
+      @@include('../partials/modal/modal--header.html')
+      @@include('../partials/modal/modal--body.html')
+      @@include('../partials/modal/modal--footer.html')
+    </div> 
     <div class="container">
       @@include('../partials/header.html')
-      @@include('../partials/body.html')
+      @@include('../partials/body.html')      
       @@include('../partials/footer.html')
     </div>
   </div>

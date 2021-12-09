@@ -1,0 +1,50 @@
+// panel Left
+.panel-left {
+  border-right: 1px solid $ui-04;
+
+  // Selectbox
+  .select {
+    margin-bottom: 4px;
+  }
+  .select-selector__button {
+    display: flex;
+    justify-content: space-between;
+  }
+  .button__text {
+    @include p;
+    color: $text-02;
+  }
+
+  // Search text-input
+  .search {
+    display: flex;
+    justify-content: space-between;
+  }
+  .search__button--order {
+    background-color: transparent;
+    border: none;
+  }
+
+  // List
+  .list {
+    border: none;
+  }
+  .list__head {
+    padding: $spacing-sm;
+  }
+  .list__item--lg {
+    height: 40px;
+    align-items: center;
+  }
+  .list__head--background {
+    height: 40px;
+    // background-color: $ui-01;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// remove
+.panel-remove--left {
+  right: -19px;
+}
