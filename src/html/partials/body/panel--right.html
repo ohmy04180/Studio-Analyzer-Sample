@@ -3,8 +3,8 @@
 
 
         <!-- panel tab -->
-        <div class="panel-head tab--container">
-            <ul class="tab__bar">
+        <div class="panel-head tab tab--container tab--horizontal">
+            <ul class="tab-bar">
                 <li class="tab__item tab__item--icon">
                     <button class="tab__button button--lg button--icon">
                         <svg class="svg-icon" aria-hidden="true">
@@ -57,13 +57,13 @@
 
 
             <!-- 필터 설정 -->
-            <div class="panel-container filter">
+            <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                     <div class="panel-container__content panel-container__title">
                         <span class="panel-container__title-text">필터</span>
                     </div>
                     <div class="panel-container__content">
-                        <button class="button button--support filter__button">
+                        <button class="button button--support button--full">
                             <svg class="svg-icon" aria-hidden="true">
                                 <use xlink:href="#plus"></use>
                             </svg>
@@ -76,7 +76,7 @@
 
 
             <!-- Y축 설정 -->
-            <div class="panel-container axis">
+            <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                     <div class="panel-container__content panel-container__title">
                         <span class="panel-container__title-text">Y축(막대)</span>
@@ -108,7 +108,7 @@
                                     </li>                    
                                 </ul>            
                             </div>   
-                            <button class="button--sm button--link button--icon axis__button">
+                            <button class="button--sm button--link button--icon button">
                                 <svg class="svg-icon" aria-hidden="true">
                                     <use xlink:href="#edit"></use>
                                 </svg>
@@ -132,7 +132,7 @@
 
 
             <!-- X축 설정 -->
-            <div class="panel-container axis">
+            <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                     <div class="panel-container__content panel-container__title">
                         <span class="panel-container__title-text">X축(막대 너비)</span>
@@ -158,7 +158,7 @@
                                     </li>                    
                                 </ul>            
                             </div>   
-                            <button class="button--sm button--link button--icon axis__button">
+                            <button class="button--sm button--link button--icon button">
                                 <svg class="svg-icon" aria-hidden="true">
                                     <use xlink:href="#edit"></use>
                                 </svg>
@@ -205,7 +205,7 @@
 
 
             <!-- 색상(범례) -->
-            <div class="panel-container axis">
+            <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                     <div class=" panel-container__content">  
                         <div class="panel-container__option">
@@ -227,7 +227,7 @@
                                     </li>                    
                                 </ul>            
                             </div>   
-                            <button class="button--sm button--link button--icon axis__button">
+                            <button class="button--sm button--link button--icon button">
                                 <svg class="svg-icon" aria-hidden="true">
                                     <use xlink:href="#edit"></use>
                                 </svg>
@@ -257,8 +257,8 @@
                         </div>    
                     </div>   
                     <div class="panel-container__content case-sensitive">
-                        <div class="checkbox">
-                            <input type="checkbox" id="case-sensitive" class="checkbox__input">
+                        <div class="checkbox checkbox--disabled">
+                            <input type="checkbox" id="case-sensitive" class="checkbox__input" checked>
                             <label for="case-sensitive" class="checkbox__label">대소문자 구분 여부</label>
                         </div>
                         <button class="button--icon button--sm button--link">

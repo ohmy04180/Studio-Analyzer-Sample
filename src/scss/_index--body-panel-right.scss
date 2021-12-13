@@ -83,12 +83,11 @@
     display: flex;
     justify-content: flex-end;
   }
-  .filter__button {
+  .button--full {
     width: 100%;
   }
-  .axis__button {
+  .panel-container .select > .button--sm {
     margin-left: 4px;
-    border: none;
   }
   .case-sensitive {
     justify-content: flex-start;

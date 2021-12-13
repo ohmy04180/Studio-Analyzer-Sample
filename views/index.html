@@ -11,21 +11,23 @@
 <body>
   <div class="layout-root">
     <div class="modal modal--2xl" style="position: fixed;">
-      <section class="modal-header">
-        <ul class="tab__bar">
-          <li class="tab__item">
-            <button class="tab__button">
-              <span class="tab__button-text">이력</span>
-            </button>
-          </li>
-          <li class="tab__item tab__item--selected">
-            <button class="tab__button">
-              <span class="tab__button-text">분석 템플릿</span>
-            </button>
-          </li>
-        </ul>
-      </section>
-      <section class="modal-body">
+      <div class="modal__head">
+        <div class="tab tab__horizontal">
+          <ul class="tab__bar">
+            <li class="tab__item">
+              <button class="tab__button">
+                <span class="tab__button-text">이력</span>
+              </button>
+            </li>
+            <li class="tab__item tab__item--selected">
+              <button class="tab__button">
+                <span class="tab__button-text">분석 템플릿</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal__body">
         <div class="modal-body__content">
           <div class="text-input-group">
             <span class="text-input-group__icon">
@@ -138,8 +140,8 @@
             </tbody>
           </table>
         </div>
-      </section>
-      <section class="modal-footer">
+      </div>
+      <div class="modal__footer">
         <div class="pagination">
           <button class="pagination__button button button--link">
             <svg class="svg-icon" aria-hidden="true">
@@ -200,7 +202,7 @@
             </svg>
           </button>
         </div>
-      </section>
+      </div>
     </div>
     <div class="container">
       <!-- header -->
@@ -259,23 +261,27 @@
               </div>
               <div class="top-bar__toolbar-item">
                 <div class="select">
-                  <button class="top-bar__toolbar-button select-selector__button button">
-                    <svg class="svg-icon" aria-hidden="true">
-                      <use xlink:href="#global"></use>
-                    </svg>
-                    <span class="button__text">한국어</span>
-                    <svg class="svg-icon" aria-hidden="true">
-                      <use xlink:href="#chevron-down-medium"></use>
-                    </svg>
-                  </button>
-                  <ul class="select-container">
-                    <li class="select-container__item">
-                      <button class="select-container__button select-container__subtext button-base">한국어</button>
-                    </li>
-                    <li class="select-container__item">
-                      <button class="select-container__button select-container__subtext button-base">영어</button>
-                    </li>
-                  </ul>
+                  <div class=" select-selector">
+                    <button class="top-bar__toolbar-button select-selector__button button">
+                      <svg class="svg-icon" aria-hidden="true">
+                        <use xlink:href="#global"></use>
+                      </svg>
+                      <span class="button__text">한국어</span>
+                      <svg class="svg-icon" aria-hidden="true">
+                        <use xlink:href="#chevron-down-medium"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="select-container">
+                    <ul class="select-container__list">
+                      <li class="select-container__item">
+                        <button class="select-container__button select-container__subtext button-base">한국어</button>
+                      </li>
+                      <li class="select-container__item">
+                        <button class="select-container__button select-container__subtext button-base">영어</button>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="top-bar__toolbar-item">
@@ -299,15 +305,15 @@
           <div class="panel panel-left">
 
             <!-- panel tab -->
-            <div class="panel-head tab--container">
-              <ul class="tab__bar">
+            <div class="panel-head tab tab--container tab--horizontal">
+              <ul class="tab-bar">
                 <li class="tab__item tab__item--selected">
-                  <button class="button-base tab__button">
+                  <button class="tab__button button">
                     <span class="tab__button-text">데이터 모델</span>
                   </button>
                 </li>
                 <li class="tab__item">
-                  <button class="button-base tab__button">
+                  <button class="tab__button button">
                     <span class="tab__button-text">시간</span>
                   </button>
                 </li>
@@ -488,6 +494,78 @@
                         <span class="list__text">list item text</span>
                       </button>
                     </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
+                    <li class="list__item list__item--lg">
+                      <button class="list__button">
+                        <svg class="svg-icon list__icon" aria-hidden="true">
+                          <use xlink:href="#text"></use>
+                        </svg>
+                        <span class="list__text">list item text</span>
+                      </button>
+                    </li>
                   </ul>
                 </div>
 
@@ -506,15 +584,15 @@
           </div>
         </section>
         <section class="body-main">
-          <div class="main-head">
-            <div class="main-head__title">
-              <div class="main-head__container">
-                <svg class="svg-icon main-head__icon" aria-hidden="true">
+          <div class="main-bar">
+            <div class="main-bar__title">
+              <div class="main-bar__container">
+                <svg class="svg-icon main-bar__icon" aria-hidden="true">
                   <use xlink:href="#data-model"></use>
                 </svg>
-                <span class="main-head__text">샘플_데이터_맵_03_Mesh</span>
+                <span class="main-bar__text">샘플_데이터_맵_03_Mesh</span>
               </div>
-              <div class="main-head__container toggle">
+              <div class="main-bar__container toggle">
                 <span class="toggle__text">샘플링</span>
                 <div class="toggle-switch toggle-switch--sm">
                   <button class="toggle-switch__switch toggle-switch__switch--selected">
@@ -524,43 +602,48 @@
                   </button>
                 </div>
               </div>
-              <div class="main-head__container">
-                <button class="button--link button--sm button--icon main-head__button">
-                  <svg class="svg-icon main-head__icon" aria-hidden="true">
+              <div class="main-bar__container">
+                <button class="button--link button--sm button--icon main-bar__button">
+                  <svg class="svg-icon main-bar__icon" aria-hidden="true">
                     <use xlink:href="#next"></use>
                   </svg>
                 </button>
               </div>
             </div>
-            <ul class="main-head__menu">
-              <li class="main-head__item">
-                <button class="button button--icon button--tertiary">
-                  <svg class="svg-icon main-head__icon" aria-hidden="true">
-                    <use xlink:href="#to-other-chart"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="main-head__item">
-                <button class="button button--icon button--tertiary">
-                  <svg class="svg-icon main-head__icon" aria-hidden="true">
-                    <use xlink:href="#tag"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="main-head__item main-head__item--selected">
-                <button class="button button--icon button--tertiary">
-                  <svg class="svg-icon main-head__icon" aria-hidden="true">
-                    <use xlink:href="#report-tag"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="main-head__item">
-                <button class="button button--icon button--tertiary">
-                  <svg class="svg-icon main-head__icon" aria-hidden="true">
-                    <use xlink:href="#open-new-tap"></use>
-                  </svg>
-                </button>
-              </li>
+
+
+            <div class="tab tab--container tab--horizontal">
+              <ul class="tab-bar__list">
+                <li class="tab-bar__item">
+                  <button class="button button--icon button--tertiary">
+                    <svg class="svg-icon tab-bar__icon" aria-hidden="true">
+                      <use xlink:href="#to-other-chart"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="tab-bar__item">
+                  <button class="button button--icon button--tertiary">
+                    <svg class="svg-icon tab-bar__icon" aria-hidden="true">
+                      <use xlink:href="#tag"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="tab-bar__item tab-bar__item--selected">
+                  <button class="button button--icon button--tertiary">
+                    <svg class="svg-icon tab-bar__icon" aria-hidden="true">
+                      <use xlink:href="#report-tag"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="tab-bar__item">
+                  <button class="button button--icon button--tertiary">
+                    <svg class="svg-icon tab-bar__icon" aria-hidden="true">
+                      <use xlink:href="#open-new-tap"></use>
+                    </svg>
+                  </button>
+                </li>
+            </div>
+
             </ul>
           </div>
         </section>
@@ -569,8 +652,8 @@
 
 
             <!-- panel tab -->
-            <div class="panel-head tab--container">
-              <ul class="tab__bar">
+            <div class="panel-head tab tab--container tab--horizontal">
+              <ul class="tab-bar">
                 <li class="tab__item tab__item--icon">
                   <button class="tab__button button--lg button--icon">
                     <svg class="svg-icon" aria-hidden="true">
@@ -623,13 +706,13 @@
 
 
               <!-- 필터 설정 -->
-              <div class="panel-container filter">
+              <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                   <div class="panel-container__content panel-container__title">
                     <span class="panel-container__title-text">필터</span>
                   </div>
                   <div class="panel-container__content">
-                    <button class="button button--support filter__button">
+                    <button class="button button--support button--full">
                       <svg class="svg-icon" aria-hidden="true">
                         <use xlink:href="#plus"></use>
                       </svg>
@@ -642,7 +725,7 @@
 
 
               <!-- Y축 설정 -->
-              <div class="panel-container axis">
+              <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                   <div class="panel-container__content panel-container__title">
                     <span class="panel-container__title-text">Y축(막대)</span>
@@ -674,7 +757,7 @@
                           </li>
                         </ul>
                       </div>
-                      <button class="button--sm button--link button--icon axis__button">
+                      <button class="button--sm button--link button--icon button">
                         <svg class="svg-icon" aria-hidden="true">
                           <use xlink:href="#edit"></use>
                         </svg>
@@ -698,7 +781,7 @@
 
 
               <!-- X축 설정 -->
-              <div class="panel-container axis">
+              <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                   <div class="panel-container__content panel-container__title">
                     <span class="panel-container__title-text">X축(막대 너비)</span>
@@ -724,7 +807,7 @@
                           </li>
                         </ul>
                       </div>
-                      <button class="button--sm button--link button--icon axis__button">
+                      <button class="button--sm button--link button--icon button">
                         <svg class="svg-icon" aria-hidden="true">
                           <use xlink:href="#edit"></use>
                         </svg>
@@ -771,7 +854,7 @@
 
 
               <!-- 색상(범례) -->
-              <div class="panel-container axis">
+              <div class="panel-container">
                 <div class="panel-container__border--bottom ">
                   <div class=" panel-container__content">
                     <div class="panel-container__option">
@@ -793,7 +876,7 @@
                           </li>
                         </ul>
                       </div>
-                      <button class="button--sm button--link button--icon axis__button">
+                      <button class="button--sm button--link button--icon button">
                         <svg class="svg-icon" aria-hidden="true">
                           <use xlink:href="#edit"></use>
                         </svg>
@@ -823,8 +906,8 @@
                     </div>
                   </div>
                   <div class="panel-container__content case-sensitive">
-                    <div class="checkbox">
-                      <input type="checkbox" id="case-sensitive" class="checkbox__input">
+                    <div class="checkbox checkbox--disabled">
+                      <input type="checkbox" id="case-sensitive" class="checkbox__input" checked>
                       <label for="case-sensitive" class="checkbox__label">대소문자 구분 여부</label>
                     </div>
                     <button class="button--icon button--sm button--link">

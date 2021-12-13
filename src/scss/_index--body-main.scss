@@ -3,62 +3,67 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
-}
-.main-head {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: $ui-01;
-}
-.main-head__icon {
-  fill: $text-02;
-}
+  .main-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $ui-01;
+  }
+  .main-bar__icon {
+    fill: $text-02;
+  }
 
-// main-head__title
-.main-head__title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: $spacing-xs $spacing-sm;
-  & > * {
-    margin-right: $spacing-md;
+  // main-bar__title
+  .main-bar__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: $spacing-xs $spacing-sm;
+    & > * {
+      margin-right: $spacing-md;
+    }
+    & > *:nth-last-of-type(1) {
+      margin: 0;
+    }
   }
-  & > *:nth-last-of-type(1) {
-    margin: 0;
+  .main-bar__container {
+    display: flex;
+    align-items: center;
+    & > * {
+      margin-right: $spacing-2xs;
+    }
+    & > *:nth-last-child(1) {
+      margin: 0;
+    }
   }
-}
-.main-head__container {
-  display: flex;
-  align-items: center;
-  & > * {
-    margin-right: $spacing-2xs;
+  .main-bar__button {
+    border: none;
   }
-  & > *:nth-last-child(1) {
-    margin: 0;
-  }
-}
-.main-head__button {
-  border: none;
-}
 
-// main-head__meun
-.main-head__menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: $spacing-xs $spacing-sm;
-  & > * {
-    margin-right: $spacing-2xs;
+  // tab-bar__meun
+  .tab-bar__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: $spacing-xs $spacing-sm;
+    & > * {
+      margin-right: $spacing-2xs;
+    }
+    & > *:nth-last-of-type(1) {
+      margin: 0;
+    }
   }
-  & > *:nth-last-of-type(1) {
-    margin: 0;
-  }
-}
-.main-head__item--selected {
-  button {
-    background-color: $ui-03;
-  }
-  .main-head__icon {
-    fill: $text-04;
+  .tab-bar__item--selected {
+    button {
+      background-color: $ui-03;
+    }
+    .tab-bar__icon {
+      fill: $text-04;
+    }
+    &:hover {
+      button {
+        background-color: $overlay-01;
+      }
+    }
   }
 }
