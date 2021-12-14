@@ -1,0 +1,284 @@
+<section class="panel-wrap">
+    <div class="panel panel-right">
+
+
+        <!-- panel tab -->
+        <div class="panel-head tab tab--container tab--horizontal">
+            <ul class="tab-bar">
+                <li class="tab__item tab__item--icon">
+                    <button class="tab__button button--lg button--icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#table"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="tab__item tab__item--icon">
+                    <button class="tab__button button--lg button--icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#column"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="tab__item tab__item--icon tab__item--selected">
+                    <button class="tab__button button--lg button--icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#hozionbar"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="tab__item tab__item--icon">
+                    <button class="tab__button button--lg button--icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#lineplot"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="tab__item tab__item--icon">
+                    <button class="tab__button button--lg button--icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#pie"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>    
+        </div>
+        <div class="panel-body">
+
+
+            <!-- 초기화 -->
+            <div class="panel-container reset">
+                <button class="button button--danger">
+                    <svg class="svg-icon" aria-hidden="true">
+                        <use xlink:href="#reset"></use>
+                    </svg>
+                    <span class="button__text">초기화</span>
+                </button>
+            </div>
+
+
+            <!-- 필터 설정 -->
+            <div class="panel-container">
+                <div class="panel-container__border--bottom ">
+                    <div class="panel-container__content panel-container__title">
+                        <span class="panel-container__title-text">필터</span>
+                    </div>
+                    <div class="panel-container__content">
+                        <button class="button button--support button--full">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#plus"></use>
+                            </svg>
+                            <span class="button__text">항목추가</span>
+                        </button>                 
+                    </div>
+                    
+                </div>                
+            </div>
+
+
+            <!-- Y축 설정 -->
+            <div class="panel-container">
+                <div class="panel-container__border--bottom ">
+                    <div class="panel-container__content panel-container__title">
+                        <span class="panel-container__title-text">Y축(막대)</span>
+                        <div class="notification-message notification-message--warning">
+                            <svg class="notification-message__icon svg-icon" aria-hidden="true">
+                                <use xlink:href="#warning-fill"></use>
+                            </svg>
+                            <span class="notification-message__text">필수</span>
+                        </div>
+                    </div>
+                    <div class=" panel-container__content">  
+                        <span class="panel-container__subtitle">컬럼</span>
+                        <div class="panel-container__option">
+                            <div class="select">
+                                <div class="select-selector">
+                                    <button class="select-selector__button button">                  
+                                        <span class="select-selector__title">선택하세요</span>
+                                        <svg class="svg-icon select-selector__icon" aria-hidden="true">
+                                            <use xlink:href="#chevron-down-medium"></use>
+                                        </svg>
+                                    </button>
+                                </div>                    
+                                <ul class="select-container">
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">1</button>
+                                    </li>
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">2</button>
+                                    </li>                    
+                                </ul>            
+                            </div>   
+                            <button class="button--sm button--link button--icon button">
+                                <svg class="svg-icon" aria-hidden="true">
+                                    <use xlink:href="#edit"></use>
+                                </svg>
+                            </button>  
+                        </div>  
+                    </div>                    
+                    <div class=" panel-container__content">  
+                        <span class="panel-container__subtitle">축 제목</span>
+                        <div class="panel-container__option">
+                            <div class="text-input-group">
+                                <input type="text" placeholder="선택 항목" class="text-input">                                    
+                            </div>
+                            <div class="checkbox panel-container__checkbox">
+                                <input type="checkbox" id="mark-01" class="checkbox__input">
+                                <label for="mark-01" class="checkbox__label">표시</label>
+                            </div>
+                        </div> 
+                    </div>                     
+                </div>                
+            </div>
+
+
+            <!-- X축 설정 -->
+            <div class="panel-container">
+                <div class="panel-container__border--bottom ">
+                    <div class="panel-container__content panel-container__title">
+                        <span class="panel-container__title-text">X축(막대 너비)</span>
+                    </div>
+                    <div class="panel-container__content">  
+                        <span class="panel-container__subtitle">컬럼</span>
+                        <div class="panel-container__option">
+                            <div class="select">
+                                <div class="select-selector">
+                                    <button class="select-selector__button button">                  
+                                        <span class="select-selector__title">선택하세요</span>
+                                        <svg class="svg-icon select-selector__icon" aria-hidden="true">
+                                            <use xlink:href="#chevron-down-medium"></use>
+                                        </svg>
+                                    </button>
+                                </div>                    
+                                <ul class="select-container">
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">1</button>
+                                    </li>
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">2</button>
+                                    </li>                    
+                                </ul>            
+                            </div>   
+                            <button class="button--sm button--link button--icon button">
+                                <svg class="svg-icon" aria-hidden="true">
+                                    <use xlink:href="#edit"></use>
+                                </svg>
+                            </button>  
+                        </div>     
+                    </div>                    
+                    <div class=" panel-container__content">  
+                        <span class="panel-container__subtitle">축 제목</span>
+                        <div class="panel-container__option">
+                            <div class="text-input-group">
+                                <input type="text" placeholder="선택 항목" class="text-input">                                    
+                            </div>
+                            <div class="checkbox panel-container__checkbox">
+                                <input type="checkbox" id="mark-02" class="checkbox__input">
+                                <label for="mark-02" class="checkbox__label">표시</label>
+                            </div>
+                        </div>  
+                    </div>  
+                    <div class=" panel-container__content"> 
+                        <span class="panel-container__subtitle">정렬</span>
+                        <div class="panel-container__option">
+                            <div class="select">
+                                <div class="select-selector">
+                                    <button class="select-selector__button button">                  
+                                        <span class="select-selector__title">기본값</span>
+                                        <svg class="svg-icon select-selector__icon" aria-hidden="true">
+                                            <use xlink:href="#chevron-down-medium"></use>
+                                        </svg>
+                                    </button>
+                                </div>                    
+                                <ul class="select-container">
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">1</button>
+                                    </li>
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">2</button>
+                                    </li>                    
+                                </ul>            
+                            </div>   
+                        </div>  
+                    </div>                       
+                </div>                
+            </div>
+
+
+            <!-- 색상(범례) -->
+            <div class="panel-container">
+                <div class="panel-container__border--bottom ">
+                    <div class=" panel-container__content">  
+                        <div class="panel-container__option">
+                            <div class="select">
+                                <div class="select-selector">
+                                    <button class="select-selector__button button">                  
+                                        <span class="select-selector__title">선택하세요</span>
+                                        <svg class="svg-icon select-selector__icon" aria-hidden="true">
+                                            <use xlink:href="#chevron-down-medium"></use>
+                                        </svg>
+                                    </button>
+                                </div>                    
+                                <ul class="select-container">
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">1</button>
+                                    </li>
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">2</button>
+                                    </li>                    
+                                </ul>            
+                            </div>   
+                            <button class="button--sm button--link button--icon button">
+                                <svg class="svg-icon" aria-hidden="true">
+                                    <use xlink:href="#edit"></use>
+                                </svg>
+                            </button>  
+                        </div>   
+                    </div>                    
+                    <div class=" panel-container__content">  
+                        <div class="panel-container__option">
+                            <div class="select select--disabled">
+                                <div class="select-selector">
+                                    <button class="select-selector__button button">                  
+                                        <span class="select-selector__title">기본값</span>
+                                        <svg class="svg-icon select-selector__icon" aria-hidden="true">
+                                            <use xlink:href="#chevron-down-medium"></use>
+                                        </svg>
+                                    </button>
+                                </div>                    
+                                <ul class="select-container">
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">1</button>
+                                    </li>
+                                    <li class="select-container__item">
+                                        <button class="select-container__button select-container__subtext button-base">2</button>
+                                    </li>                    
+                                </ul>            
+                            </div>    
+                        </div>    
+                    </div>   
+                    <div class="panel-container__content case-sensitive">
+                        <div class="checkbox checkbox--disabled">
+                            <input type="checkbox" id="case-sensitive" class="checkbox__input" checked>
+                            <label for="case-sensitive" class="checkbox__label">대소문자 구분 여부</label>
+                        </div>
+                        <button class="button--icon button--sm button--link">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#help-outline"></use>
+                            </svg>
+                        </button>
+                    </div>                
+                </div>                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- remove button -->
+    <div class="panel-remove panel-remove--right">
+        <button class="panel-remove__button">
+            <svg class="svg-icon panel-remove__icon" aria-hidden="true">
+                <use xlink:href="#chevron-right-medium"></use>
+            </svg>
+        </button>
+    </div>
+</section>

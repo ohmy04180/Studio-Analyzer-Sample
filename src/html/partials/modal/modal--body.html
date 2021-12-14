@@ -1,0 +1,114 @@
+<div class="modal__body">
+    <div class="modal-body__content">
+        <div class="text-input-group">
+            <span class="text-input-group__icon">
+                <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#search"></use>
+                </svg>                            
+            </span>
+            <input type="text" placeholder="검색어를 입력해주세요" class="text-input">
+        </div>
+    </div>
+    <div class="modal-body__content">
+        <table class="table table--secondary">
+            <colgroup></colgroup>
+            <thead>
+                <tr>
+                    <th class="table-name__order">
+                        <span>#</span>
+                    </th>
+                    <th class="table-name__name">
+                        <span>이름</span>
+                        <button class="button--icon button--sm button--link table__button">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#sort"></use>
+                            </svg>
+                        </button>
+                    </th>      
+                    <th class="table-name__owner">
+                        <span>소유자</span>
+                        <button class="button--icon button--sm button--link table__button">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#sort"></use>
+                            </svg>
+                        </button>
+                    </th>
+                    <th class="table-name__type">
+                        <span>유형</span>
+                        <button class="button--icon button--sm button--link table__button">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#sort"></use>
+                            </svg>
+                        </button>
+                    </th>
+                    <th class="table-name__timesetting">
+                        <span>시간설정</span>
+                    </th>
+                    <th class="table-name__model">
+                        <span>모델명</span>
+                        <button class="button--icon button--sm button--link table__button">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#sort"></use>
+                            </svg>
+                        </button>
+                    </th>   
+                    <th class="table-name__query">
+                        <span>검색질의</span>
+                        <button class="button--icon button--sm button--link table__button">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#sort"></use>
+                            </svg>
+                        </button>
+                    </th>       
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-align--center">1</td>
+                    <td class="table-align--left">피벗_테이블_0811</td>
+                    <td class="table-align--center">demo</td>
+                    <td class="table-align--center">막대형</td>
+                    <td class="table-align--center">전체시간</td>
+                    <td class="table-align--left table-align--hidden">EDU_SEOUL_GU_FIRE_CAUSE</td>
+                    <td class="table-align--left table-align--hidden">*I pivot sum(ACCIDENTAL_ELECTRIC) SPLITROW</td>
+                </tr>
+                <tr>
+                    <td class="table-align--center">2</td>
+                    <td class="table-align--left">피벗테스트</td>
+                    <td class="table-align--center">sun</td>
+                    <td class="table-align--center">세로막대형</td>
+                    <td class="table-align--center">전체시간</td>
+                    <td class="table-align--left table-align--hidden">한국자산관리공사_국유부동산 매각현황</td>
+                    <td class="table-align--left table-align--hidden">*I pivot sum(대장금액) SPLITROW 지역구분 SPLITROW</td>
+                </tr>
+                <tr>
+                    <td class="table-align--center">3</td>
+                    <td class="table-align--left">피벗_막대그래프_정렬문제</td>
+                    <td class="table-align--center">demo</td>
+                    <td class="table-align--center">막대형</td>
+                    <td class="table-align--center">전체시간</td>
+                    <td class="table-align--left table-align--hidden">EDU_CHART_SEOUL_AIRQ_2019_2020</td>
+                    <td class="table-align--left table-align--hidden">*I pivot count(*) SPLITROW LOC AS'측정위치'</td>
+                </tr>
+                <tr>
+                    <td class="table-align--center">3</td>
+                    <td class="table-align--left">시간, 등급별 알람갯수</td>
+                    <td class="table-align--center">demo</td>
+                    <td class="table-align--center">막대형</td>
+                    <td class="table-align--center">전체시간</td>
+                    <td class="table-align--left table-align--hidden">ALARM_2020_10</td>
+                    <td class="table-align--left table-align--hidden">*I pivot count(*) SPLITROW 'date_group("최초발생")</td>
+                </tr>
+                <tr>
+                    <td class="table-align--center">3</td>
+                    <td class="table-align--left">텔코_test</td>
+                    <td class="table-align--center">demo</td>
+                    <td class="table-align--center">막대형</td>
+                    <td class="table-align--center">전체시간</td>
+                    <td class="table-align--left table-align--hidden">skt_19_20</td>
+                    <td class="table-align--left table-align--hidden">*I pivot sum(amount) SPLITROW project_team</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>   
+</div>

@@ -1,0 +1,277 @@
+<section class="panel-wrap">
+    <div class="panel panel-left">
+
+        <!-- panel tab -->
+        <div class="panel-head tab tab--container tab--horizontal">
+            <ul class="tab-bar">
+                <li class="tab__item tab__item--selected">
+                    <button class="tab__button button">
+                        <span class="tab__button-text">데이터 모델</span>
+                    </button>
+                </li>
+                <li class="tab__item">
+                    <button class="tab__button button">
+                        <span class="tab__button-text">시간</span>
+                    </button>
+                </li>
+            </ul>    
+        </div>
+
+
+        <!-- panel-body -->
+        <div class="panel-body">     
+            <div class="list">
+
+                <!-- list head -->
+                <div class="list__head">
+                    <div class="select">
+                        <div class="select-selector">
+                            <button class="select-selector__button button">                  
+                                <span class="select-selector__title">전체</span>
+                                <svg class="svg-icon select-selector__icon" aria-hidden="true">
+                                  <use xlink:href="#chevron-down-medium"></use>
+                                </svg>
+                            </button>
+                        </div>                    
+                        <ul class="select-container">
+                          <li class="select-container__item">
+                              <button class="select-container__button select-container__subtext button-base">전체</button>
+                          </li>
+                          <li class="select-container__item">
+                              <button class="select-container__button select-container__subtext button-base">일부</button>
+                          </li>                    
+                        </ul>            
+                    </div>   
+                    <div class="search">
+                        <div class="text-input-group">
+                            <span class="text-input-group__icon">
+                                <svg class="svg-icon" aria-hidden="true">
+                                    <use xlink:href="#search"></use>
+                                </svg>                            
+                            </span>
+                            <input type="text" placeholder="검색어를 입력해주세요" class="text-input">
+                            <button class="text-input-group__clear-button">
+                                <svg class="svg-icon" aria-hidden="true">
+                                    <use xlink:href="#close"></use>
+                                </svg>    
+                            </button>
+                        </div>
+                        <button class="button--icon search__button--order">
+                            <svg class="svg-icon" aria-hidden="true">
+                                <use xlink:href="#order-upside-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- list body -->
+                <div class="list__body">
+                    <ul class="list__list">
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델명</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델명</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model"></use>
+                                </svg>
+                                <svg class="svg-icon list__subicon" aria-hidden="true">
+                                    <use xlink:href="#share-filled"></use>
+                                </svg>
+                                <span class="list__text">공유받은 데이터 모델...</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>
+                        <li class="list__item list__item--lg list__item--selected">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델명</span>
+                                <span class="list__subtext"></span>
+                            </button>                        
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델명</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model-view"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델명</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>     
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model-view"></use>
+                                </svg>
+                                <svg class="svg-icon list__subicon" aria-hidden="true">
+                                    <use xlink:href="#share-filled"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델뷰명 공유...</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>                   
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model-view"></use>
+                                </svg>
+                                <svg class="svg-icon list__subicon" aria-hidden="true">
+                                    <use xlink:href="#share-filled"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델뷰 공유...</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#data-model"></use>
+                                </svg>
+                                <span class="list__text">데이터 모델명</span>
+                                <span class="list__subtext">(소유자 ID)</span>
+                            </button>                        
+                        </li>                   
+                    </ul>
+                </div>                
+            </div>              
+            <div class="list">
+                <div class="list__head list__head--background">
+                    <span class="list__head-title">알림</span>
+                </div>
+                <div class="list__body">
+                    <ul class="list__list">
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li>
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li>   
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li> <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li> <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li> <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li> <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li> <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li>     
+                        <li class="list__item list__item--lg">
+                            <button class="list__button">
+                                <svg class="svg-icon list__icon" aria-hidden="true">
+                                    <use xlink:href="#text"></use>
+                                </svg>
+                                <span class="list__text">list item text</span>
+                            </button>                            
+                        </li>                  
+                    </ul>
+                </div>                
+                
+            </div>            
+        </div>
+    </div>
+
+
+    <!-- remove button -->
+    <div class="panel-remove panel-remove--left">
+        <button class="panel-remove__button">
+            <svg class="svg-icon panel-remove__icon" aria-hidden="true">
+                <use xlink:href="#chevron-left-medium"></use>
+            </svg>
+        </button>
+    </div>
+</section>
