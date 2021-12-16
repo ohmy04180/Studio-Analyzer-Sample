@@ -14316,12 +14316,6 @@ html, body {
   height: 100%;
 }
 
-main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
 .index-layout-head {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.03);
@@ -18151,7 +18145,7 @@ main {
 }
 
 .gnb__button {
-  padding: 13px 16px;
+  padding: 14px 16px;
   border: none;
   border-bottom: 2px solid transparent;
   background: none;
@@ -18210,6 +18204,16 @@ body,
   height: 100%;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18224,13 +18228,6 @@ body,
   height: 100%;
   background-color: #f7f9fc;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .panel {
@@ -18243,7 +18240,6 @@ body,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: auto;
 }
 
 .panel-head {
@@ -18282,6 +18278,9 @@ body,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .panel-remove {
